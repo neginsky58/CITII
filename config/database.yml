@@ -25,11 +25,10 @@
 #   timeout: 5000
 
 
-
 development:
   adapter: postgresql
   encoding: unicode
-  database: binbuds_dev
+  database: citii_dev
   pool: 5
   username: postgres
   password: password
@@ -38,7 +37,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: binbuds_test
+  database: citii_test
   pool: 5
   username: postgres
   password: password
@@ -48,7 +47,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: binbuds
+  database: citii
   pool: 5
   username: 
   password:

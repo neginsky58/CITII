@@ -9,5 +9,27 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require bootstrap 
+ *= require font-awesome 
  *= require_tree .
  */
+
+header {
+  height: 46px;
+  line-height: 46px;
+}
+
+.citii-docs-footer {
+  height: 300px;
+} 
+.citii-active {
+  border: 1px solid #acacac;
+  font-size:27px;
+}
+.citii-active a {
+  font-weight: bold;
+  color: #00bc47;
+}
+.nav-top-main-menu {
+  /*border-bottom: 1px solid #acacac;*/
+}

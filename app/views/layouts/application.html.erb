@@ -6,9 +6,19 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
-<%= yield %>
+  <header class="navbar navbar-static-top ">    
+    <%= render 'shared/header' %>    
+  </header>
+  <div class="container">
+    <%= yield %>
+  </div>
+  <footer class="citii-docs-footer">
+    <%= render 'shared/footer' %>
+  </div>
 
 </body>
+
 </html>
