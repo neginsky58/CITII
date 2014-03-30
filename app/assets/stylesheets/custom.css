@@ -38,9 +38,36 @@ header {
   min-height: 400px;
   width: 1310px;
 }
-
-
 .project-block .project-block-content {
   border: 1px solid #f2f2f2;
+  padding-top: 9px;
+  height: 350px;  
 }
+.project-block .project-raised-label {
+  color: #00bc47;
+}
+.project-block .project-like-number {
+  color: #959595;
+}
+.project-block .project-comment-label {
+  color: #cfcfcf;
+}
+.project-block .polygon-control {
+  margin-bottom: 5px;  
+}
+.project-block a {
+  color: #00bc47;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
