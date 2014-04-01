@@ -38,10 +38,15 @@ header {
   min-height: 400px;
   width: 1310px;
 }
+.project-block {
+  margin-bottom: 10px;  
+}
 .project-block .project-block-content {
-  border: 1px solid #f2f2f2;
-  padding-top: 9px;
-  height: 350px;  
+  border: 1px solid #f2f2f2;   
+}
+.project-block .project-block-inner-content {
+  padding: 9px 0px ;
+  min-height: 330px;   
 }
 .project-block .project-raised-label {
   color: #00bc47;
@@ -63,7 +68,26 @@ header {
   margin-top: 60px;
 }
 
-
+.project-category .nav a {
+  color: #cccccc;
+  font-weight: bold;
+}
+.project-category .nav li.active a {
+  color: #00a03c;
+  background: #fff;
+}
+.project-category {
+  margin-bottom: 10px;
+}
+input.search-word-input {
+  border: 0;
+}
+.btn-do-search {
+  background: #fff;
+}
+.btn-do-search:hover {
+  background: #eee;
+}
 
 
 

@@ -2,78 +2,52 @@
 <center><h5 class="bold-font">Explore, discuss, and fund the new frontier of solutions to the world's problems </h5></center>
 
 <div class="col-md-12">
-  <div class="col-md-6 col-md-offset-3 adjust-">  
+  <div class="col-md-4 col-md-offset-4">  
       <button class="btn btn-success col-md-5">Post a Project</button>
-      <button class="btn btn-success col-md-5 col-md-offset-1">Sign Up</button>  
+      <button class="btn btn-success col-md-5 pull-right">Sign Up</button>  
   </div>
 </div>
 
 
 <div class="col-md-12 row project-list">
-  <div class="row project-category col-md-12">
+  <div class="project-category col-md-12">    
     
-    <ul class="navbar nav-pills nav-justified col-md-6">
-      <li> <a href="#">Popular</a> </li>
-      <li> <a href="#">New</a></li>
-      <li> <a href="#">Most $ Raised</a></li>
+    <ul class="nav nav-pills">
+      <li class="active"> <a href="#">POPULAR</a> </li>
+      <li> <a href="#">NEW</a></li>
+      <li> <a href="#">MOST $ RAISED</a></li>
+      <li> <a href="#">MOST VOTED</a></li>
+      <li> <a href="#">MOST COMMENTED</a></li>
     </ul>
   
   </div>
   <div class="project-block col-md-3">
-    <div class="col-md-12 project-block-content ">      
-      <div class="col-md-2"> 
-        <div class="row text-center polygon-control">   
-          <%= image_tag 'polygon.png' %>
-        </div>
-        <div class="row text-center">
-          <label class="project-like-number">13,123</label>
-        </div>
-      </div>
-      <div class="col-md-10">        
-        <div class="row">
-          <div class="text-right">
-            <label class="project-raised-label">$1,349.00 Raised</label>
-          </div>
-          <div class="text-right">
-            <label class="project-comment-label">42 Comments</label>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <div class="row">
-          <p>Create a daycare teleconferencing network which allows kids from across the world to play game.<a href="col-md">cheer1990</a></p>
-        </div>
-      </div>
-      <div class="col-md-12 project-image">
-        <div class="row">
-          <a href="#">
-            <%= image_tag 'projects/photo1.jpg', class: 'img-responsive' %>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <div class="row text-right">
-          <a href="#">Community</a>
-          <a href="">/</a>
-          <a href="#">Technology</a>
-        </div>
-      </div>
-    </div>
+    <%= render template:'projects/item' %>
   </div>
   <div class="project-block col-md-3">
-    <div class="col-md-12 project-block-content">
-      <label class="">Block2</label>
-    </div>
+    <%= render template:'projects/item' %>
   </div>
   <div class="project-block col-md-3">
-    <div class="col-md-12 project-block-content">
-      <label class="">Block3</label>
-    </div>
+    <%= render template:'/projects/item' %>
   </div>
   <div class="project-block col-md-3">
-    <div class="col-md-12 project-block-content">
-      <label class="">Block4</label>
-    </div>
+    <%= render template:'/projects/item' %>
   </div>  
+
+  <!--  2 Lines -->
+  <div class="project-block col-md-3">
+    <%= render template:'projects/item' %>
+  </div>
+  <div class="project-block col-md-3">
+    <%= render template:'projects/item' %>
+  </div>
+  <div class="project-block col-md-3">
+    <%= render template:'/projects/item' %>
+  </div>
+  <div class="project-block col-md-3">
+    <%= render template:'/projects/item' %>
+  </div>  
+
+
 </div>
   
