@@ -1,17 +1,5 @@
 class ProjectsController < ApplicationController
-  def admin
-    if current_user.try(:admin?)
-      @projects = Project.submittedforapproval.pendingapproval.page(params[:pendingapproval_page]).per_page(25)
-      @activeprojects = Project.approved.page(params[:activeprojects_page]).per_page(25)
-
-      respond_to do |format|
-        format.html # index.html.erb
-        format.json { render json: @projects }
-      end
-    else
-      redirect_to root_url
-    end
-  end
+  
 
   def index
     #@projects = Project.order("created_at desc").page(params[:page]).per_page(5)
@@ -58,7 +46,7 @@ class ProjectsController < ApplicationController
   # GET /projects/new
   # GET /projects/new.json
   def new
-    @project = current_user.projects.new
+    @project = Project.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -78,81 +66,7 @@ class ProjectsController < ApplicationController
     end
   end
 
-  def editteam
-    if current_user == Project.find(params[:id]).user
-        @project = Project.find(params[:id])
-        @review_comments = @project.review_comments.newest.page(params[:page]).per_page(10)
-        @team_members = @project.team_members.page(params[:page]).per_page(20)
-    else
-      redirect_to root_url
-    end
-  end
-
-  def editprojectcosts
-    if current_user == Project.find(params[:id]).user
-        @project = Project.find(params[:id])
-        @projectcosts = @project.projectcosts.organizedbyname.page(params[:projectcosts_page]).per_page(20)
-    else
-      redirect_to root_url
-    end
-  end
-
-  def editcomments
-    if current_user == Project.find(params[:id]).user
-        @project = Project.find(params[:id])
-        @review_comments = @project.review_comments.newest.page(params[:page]).per_page(10)
-        @team_members = @project.team_members.page(params[:page]).per_page(20)
-    else
-      redirect_to root_url
-    end
-  end
-
-  def comments
-    @project = Project.find(params[:id])
-    @commentable = @project
-    @newcomments = @commentable.newcomments.newest.page(params[:comments_page]).per_page(10)
-    @newcomment = Newcomment.new
-    @team_members = @project.team_members.page(params[:page]).per_page(10)
-    # @ttwocomments = @commentable.newcomment.ttwocomments.newest.page(params[:ttwocomments_page]).per_page(2)
-
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @project.comments }
-    end
-  end
-
-  def blogs
-    @project = Project.find(params[:id])
-    @blogupdates = @project.blogupdates.newest.page(params[:blogupdates_page]).per_page(5)
-    @team_members = @project.team_members.page(params[:page]).per_page(10)
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @project.blogs }
-    end
-  end
-
-  def team
-    @project = Project.find(params[:id])
-    @team_members = @project.team_members
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @project }
-    end
-  end
-
-  def finances
-    @project = Project.find(params[:id])
-    @projectcosts = @project.projectcosts.organizedbyname.page(params[:projectfinances_page]).per_page(10)
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @project }
-    end
-  end
-
+  
   # POST /projects
   # POST /projects.json
   def create
@@ -201,24 +115,6 @@ class ProjectsController < ApplicationController
     end
   end
 
-  def submitreview
-    @project = Project.find(params[:id])
-    @project.update_attributes(submitreview: true)
-    redirect_to project_path(@project)
-  end
-
-  def returntouser
-    @project = Project.find(params[:id])
-    @project.update_attributes(submitreview: false)
-    redirect_to admin_url
-  end
-
-  def projectapproved
-    @project = Project.find(params[:id])
-    @project.update_attributes(projectreviewed: true)
-    redirect_to admin_url
-  end
-
   # DELETE /projects/1
   # DELETE /projects/1.json
   def destroy
@@ -239,12 +135,6 @@ class ProjectsController < ApplicationController
     end
   end
 
-  def following
-    @title = "Followers"
-    @project = Project.find(params[:id])
-    @users = @project.favorited_by.newest.page(params[:followers_page]).per_page(5)
-    @team_members = @project.team_members.page(params[:page]).per_page(10)
-    render 'show_follow'
-  end
+  
 
 end

@@ -88,12 +88,28 @@ input.search-word-input {
 .btn-do-search:hover {
   background: #eee;
 }
-
-
-
-
-
-
+.new-project-container {
+  max-width: 1003px;
+  margin: 0 auto;
+}
+.project-expired-section {
+  background: #00bc47;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.project-expired-section h3 {
+  margin-top: 10px;
+}
+.new-project-container .project-title {
+  color: #00bc47;
+}
+.new-project-container .validate-notification {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+form h4 {
+  color: #00bc47;
+}
 
 
 

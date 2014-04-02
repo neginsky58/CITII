@@ -2,7 +2,7 @@ Citii::Application.routes.draw do
 
   # Home page
   resources :home
-
+  resources :projects
   root 'home#index'
 
   # Example resource route with options:

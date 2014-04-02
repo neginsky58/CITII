@@ -10,12 +10,12 @@
 <body>
 
   <header class="navbar navbar-static-top ">    
-    <%= render 'shared/header' %> 
-     
+    <%= render 'shared/header' %>   
+    <%= render 'shared/sub_menu' %>   
   </header>
-  
-  <%= yield %>
-  
+  <div class="container">
+    <%= yield %>
+  </div>
   <footer class="citii-docs-footer">
     <%= render 'shared/footer' %>
   </div>
