@@ -15,32 +15,7 @@ class ProjectsController < ApplicationController
   # GET /projects/1
   # GET /projects/1.json
   def show
-    if Project.find(params[:id]).projectreviewed == true || current_user.try(:admin?) || current_user == Project.find(params[:id]).user
-      @project = Project.find(params[:id])
-      @commentable = @project
-      @newcomments = @commentable.newcomments.newest.page(params[:comments_page]).per_page(5)
-      @newcomment = Newcomment.new
-      @blogupdates = @project.blogupdates.newest.page(params[:blogupdates_page]).per_page(5)
-      @review_comments = @project.review_comments.newest.page(params[:page]).per_page(10)
-      @team_members = @project.team_members.page(params[:page]).per_page(10)
-      
-      
-      # Written by Frank
-      @sum_of_funded = Donates.sum(:amount, :conditions => ['project_id = ?', params[:id]])
-      @count_of_donated = Donates.count(:donator_id, :distinct => true, :conditions => ['project_id = ?', params[:id]])      
-      
-      @donator_ids = Donates.find(:all, :group => :donator_id, :select=> :donator_id, :conditions => ['project_id = ?', params[:id]])
-      ids = Array.new
-      @donator_ids.each do |donator|
-        ids.push(donator[:donator_id])   
-      end
-       
-      @donators = User.find(ids)
-      
-      
-    else
-      redirect_to root_url
-    end
+    @project = Project.new
   end
 
   # GET /projects/new
