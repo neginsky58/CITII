@@ -188,3 +188,32 @@ form h4 {
 .project-image-view {
   padding: 30px 0 0;
 }
+.login-modal {
+  max-width: 500px;
+  max-height: 500px;
+  border: 1px solid #444444;  
+}
+.login-modal .header {
+  background-color: #00bc47;
+  padding: 10px 0;
+}
+.login-modal .welcome {
+  color:  #00bc47;
+}
+.login-modal .login-modal-content {
+  padding: 10px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

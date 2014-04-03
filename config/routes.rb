@@ -3,6 +3,15 @@ Citii::Application.routes.draw do
   # Home page
   resources :home
   resources :projects
+  
+  resources :users do
+
+    collection do
+      get 'login'
+    end
+
+  end
+
   root 'home#index'
 
   # Example resource route with options:
