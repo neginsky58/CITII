@@ -124,7 +124,8 @@ form h4 {
   font-weight: bold;
   color: #000 !important;
 }
-.project-view-container span {
+.project-view-container span, 
+.project-view-container p{
   color: #9c9c9c;
 }
 .project-view-container .reward {
@@ -138,12 +139,52 @@ form h4 {
   background: #00bc47;
 }
 .donate-line-bar h3 {
-  font: #fff;
+  color: #fff;
 }
 
 .donate-line-bar2 {
-  color: #fff;
+  color: #343434;
   background: #50d682;
+  padding: 6px 0;
+  margin-bottom: 15px;
+  font-size: 18px;
 }
-
-
+.donate-line-bar2 span {
+  color: #343434;
+}
+.project-view-container a {
+  color: #00bc47;
+}
+.project-view-container .comments-header {
+  color: #b7b7b7;
+}
+.project-view-container .comments-name {
+  color: #00bc46;
+}
+.project-view-container .comment-content {
+  padding-left: 10px;
+}
+.project-view-container .donate-right-panel h3 {
+  background: #00bc46;
+  color: #fff;
+  padding: 20px;
+}
+.project-view-container .donate-right-panel .even-block {
+  background: #feffd9;
+}
+.project-view-container .donate-right-panel .saying-content {
+  padding: 15px 0;
+}
+.project-view-container .project-title {
+  padding: 51px 0 20px;
+}
+.project-view-container .project-title .header {
+  font-size: 24px;
+  color: #000;  
+}
+.btn-donate {
+  background: #009236;
+}
+.project-image-view {
+  padding: 30px 0 0;
+}

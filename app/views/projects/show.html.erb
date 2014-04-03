@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-12 project-image-view">
     <div class="row">
       <center><%= image_tag 'projects/project-big.png', class: 'img-responsive' %></center>
     </div>  
@@ -7,30 +7,47 @@
   <div class="col-md-12">
     <div class="project-view-container">
       <div class="project-title">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <p><span class="green-color">Community project</span><span> posted by </span><span class="green-color">captcha</span></p>
-        
-        <div class="form-group">
-          <p>
-            <span class="bold-desc">Project Summary:</span>
-            <span>an official sims mod which has at least three pool minigames for players and friends.</span>
-          </p>
-        </div>
-        <div class="form-group">
-          <p>
-            <span class="bold-desc">Project Concept:</span>
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at velit ac magna sodales aliquam sed et lectus. Phasellus porta elit vel semper faucibus. Cras tristique lorem eu sem accumsan, a varius ante dictum. Donec a pellentesque lectus. Curabitur ultricies justo ut nisi hendrerit euismod. Nulla facilisi. Duis fermentum massa nec commodo cursus.</span>
-          </p>
-        </div>
-        <div class="form-group">
-          <p><%= image_tag 'reward_icon.png' %><span class="reward">Rewards for donating to this project may be discussed and voted on below.</span></p>
-        </div>
-        <div class="form-group">
-          <div class="social-buttons">
-            <%= image_tag 'social-buttons.png' %>
+        <div class="col-md-1"> 
+          <div class="row">
+            <div class="row text-center polygon-control">   
+              <%= image_tag 'green-polygon.png' %>
+            </div>
+            <div class="row text-center">
+              <label class="project-like-number">13,123</label>
+            </div>
           </div>
         </div>
+        <div class="col-md-11">
+          <span class="header">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        </div>
+
+        <p><span class="green-color">Community project</span><span> posted by </span><span class="green-color">captcha</span></p>
       </div>
+        
+      <div class="form-group">
+        <p>
+          <span class="bold-desc">Project Summary:</span>
+          <span>an official sims mod which has at least three pool minigames for players and friends.</span>
+        </p>
+      </div>
+      <div class="form-group">
+        <p>
+          <span class="bold-desc">Project Concept:</span>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at velit ac magna sodales aliquam sed et lectus. Phasellus porta elit vel semper faucibus. Cras tristique lorem eu sem accumsan, a varius ante dictum. Donec a pellentesque lectus. Curabitur ultricies justo ut nisi hendrerit euismod. Nulla facilisi. Duis fermentum massa nec commodo cursus.</span>          
+        </p>
+        <p>Here is a mockup I made: <a>imgur.com/ad1212312sadasda</a></p>
+        <p>A screenshot: <a>imgur.com/ad1212312sadasdaA </a></p>
+        <p>screenshot of a payment page: imgur.com/ad1212312sadasdaLorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at velit ac magna sodales aliquam sed et lectus. Phasellus porta elit vel semper faucibus. Cras tristique lorem eu sem accumsan, a varius ante dictum. Donec a pellentesque lectus. Curabitur ultricies justo ut nisi hendrerit euismod. Nulla facilisi. Duis fermentum massa nec commodo cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis adipiscing metus  dui, vel euismod augue ornare vitae.</p>
+      </div>
+      <div class="form-group">
+        <p><%= image_tag 'reward_icon.png' %><span class="reward">Rewards for donating to this project may be discussed and voted on below.</span></p>
+      </div>
+      <div class="form-group">
+        <div class="social-buttons">
+          <a href="#"><%= image_tag 'social-buttons.png' %></a>
+        </div>
+      </div>
+      
     </div>
   </div>
 
@@ -41,12 +58,106 @@
   </div>
   <div class="col-md-12 donate-line-bar2">
     <div class="project-view-container ">
-      <h3>this project expires in 87 days, @ 9:36 AM PDT, on, Mar 31 2014<h3>
+      <button class="btn btn-donate btn-success">donate</button>
+      <span>this project expires in 87 days, @ 9:36 AM PDT, on, Mar 31 2014<span>
     </div>
   </div>
   <div class="col-md-12">
     <div class="project-view-container">
+      <div class="col-md-8">
+        <div class="form-group">
+          <label class="comments-header">COMMENTS</label>
+          <textarea class="comments_area form-control" rows="3"></textarea>
+        </div>  
+        <div class="form-group">
+          <button type="submit" class="btn btn-success">Save</button>             
+        </div>
+        <div class="form-group">
+          <p><span>all 117 comments posted - sorted by:</span><a href="#"> best <i class="fa fa-sort-down"></i></a></p>
+        </div>
+        <div class="form-group">
+          <div class="comment-content">
+            <div class="row">
+              <a class="green-polygon" href="#"><%= image_tag 'green-polygon.png', class: 'igm-green-polygon' %></a><a href="#" class="comments-name">SuzieH </a><span class="comments-hours-ago">wrote 3 hours ago </span>          
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at velit ac magna sodales aliquam sed et lectus. Phasellus porta elit vel semper faucibus. Cras tristique lorem eu sem accumsan, a varius ante dictum. Donec a pellentesque lectus. Curabitur ultricies justo ut nisi hendrerit euismod. Nulla facilisi. Duis fermentum massa nec commodo cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis adipiscing metus  dui, vel euismod augue ornare vitae.</p>
+            <p><a href="#">Reply</a></p>
+            <div class="comment-content">
+              <div class="row">
+                <a class="green-polygon" href="#"><%= image_tag 'green-polygon.png', class: 'igm-green-polygon' %></a><a href="#" class="comments-name">SuzieH </a><span class="comments-hours-ago">wrote 3 hours ago </span>          
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at velit ac magna sodales aliquam sed et lectus. Phasellus porta elit vel semper faucibus. Cras tristique lorem eu sem accumsan, a varius ante dictum. Donec a pellentesque lectus. Curabitur ultricies justo ut nisi hendrerit euismod. Nulla facilisi. Duis fermentum massa nec commodo cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis adipiscing metus  dui, vel euismod augue ornare vitae.</p>
+              <p><a href="#">Reply</a> | <a href="#">Edit</a> | <a href="#"> Delete </a></p>
+
+              <div class="comment-content">
+                <div class="row">
+                  <a class="green-polygon" href="#"><%= image_tag 'green-polygon.png', class: 'igm-green-polygon' %></a><a href="#" class="comments-name">SuzieH </a><span class="comments-hours-ago">wrote 3 hours ago </span>          
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at velit ac magna sodales aliquam sed et lectus. Phasellus porta elit vel semper faucibus. Cras tristique lorem eu sem accumsan, a varius ante dictum. Donec a pellentesque lectus. Curabitur ultricies justo ut nisi hendrerit euismod. Nulla facilisi. Duis fermentum massa nec commodo cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis adipiscing metus  dui, vel euismod augue ornare vitae.</p>
+                <p><a href="#">Reply</a> | <a href="#">Edit</a> | <a href="#"> Delete </a></p>
+                <div class="comment-content">
+                  <div class="row">
+                    <a class="green-polygon" href="#"><%= image_tag 'green-polygon.png', class: 'igm-green-polygon' %></a><a href="#" class="comments-name">SuzieH </a><span class="comments-hours-ago">wrote 3 hours ago </span>          
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at velit ac magna sodales aliquam sed et lectus. Phasellus porta elit vel semper faucibus. Cras tristique lorem eu sem accumsan, a varius ante dictum. Donec a pellentesque lectus. Curabitur ultricies justo ut nisi hendrerit euismod. Nulla facilisi. Duis fermentum massa nec commodo cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis adipiscing metus  dui, vel euismod augue ornare vitae.</p>
+                  <p><a href="#">Reply</a> | <a href="#">Edit</a> | <a href="#"> Delete </a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="col-md-4 donate-right-panel">
+        <div class="row">
+          <h3><center>WHY DID YOU GIVE?</center></h3>
+        </div>
+        <div class="row saying-content">
+          <div class="col-md-3">
+            <a href="#"><%= image_tag 'profiles/profile-photo.png' %></a>
+          </div>
+          <div class="col-md-9">
+            <p><a class="green-color" href="#">SuziH</a><span class="">:Giving reddit gold is great and all, I’d just rather give something a little more tanglible.</span></p>
+            <p class="pull-right"><a href="#" class="green-color">Vancouver, BC</a></p>
+          </div>
+        </div>
+
+        <div class="row saying-content even-block">
+          <div class="col-md-3">
+            <a href="#"><%= image_tag 'profiles/profile-photo.png' %></a>
+          </div>
+          <div class="col-md-9">
+            <p><a class="green-color" href="#">SuziH</a><span class="">:Giving reddit gold is great and all, I’d just rather give something a little more tanglible.</span></p>
+            <p class="pull-right"><a href="#" class="green-color">Vancouver, BC</a></p>
+          </div>
+        </div>
+
+        <div class="row saying-content">
+          <div class="col-md-3">
+            <a href="#"><%= image_tag 'profiles/profile-photo.png' %></a>
+          </div>
+          <div class="col-md-9">
+            <p><a class="green-color" href="#">SuziH</a><span class="">:Giving reddit gold is great and all, I’d just rather give something a little more tanglible.</span></p>
+            <p class="pull-right"><a href="#" class="green-color">Vancouver, BC</a></p>
+          </div>
+        </div>
+
+        <div class="row saying-content even-block">
+          <div class="col-md-3">
+            <a href="#"><%= image_tag 'profiles/profile-photo.png' %></a>
+          </div>
+          <div class="col-md-9">
+            <p><a class="green-color" href="#">SuziH</a><span class="">:Giving reddit gold is great and all, I’d just rather give something a little more tanglible.</span></p>
+            <p class="pull-right"><a href="#" class="green-color">Vancouver, BC</a></p>
+          </div>
+        </div>
+
+
+
+        <div class="row saying-content">
+          <center><button class="btn btn-success btn-donate">donate</button></center>
+        </div>
+      </div>
+
     </div>
   </div>
-
 </div>
