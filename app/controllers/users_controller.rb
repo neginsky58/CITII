@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  layout 'home'
+  #layout 'home'
   def login
   end
 end

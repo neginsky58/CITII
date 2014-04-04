@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Citii</title>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+
+  <header class="navbar navbar-static-top ">    
+    <%= render 'shared/header' %>   
+    <%= render 'shared/sub_menu' %>   
+  </header>
+  
+  <%= yield %>
+  
+  <footer class="citii-docs-footer">
+    <%= render 'shared/footer' %>
+  </footer>
+
+  <%= render :template => 'users/login' %>
+  <%= render :template => 'users/verify' %>
+
+</body>
+
+</html>

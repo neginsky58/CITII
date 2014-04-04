@@ -1,0 +1,54 @@
+
+
+<div class="col-md-12 row project-list">
+  <div class="project-category col-md-12">    
+    
+    <ul class="nav nav-pills">
+      <li class="active"> <a href="#">POPULAR</a> </li>
+      <li> <a href="#">NEW</a></li>
+      <li> <a href="#">MOST $ RAISED</a></li>
+      <li> <a href="#">MOST VOTED</a></li>
+      <li> <a href="#">MOST COMMENTED</a></li>
+    </ul>
+  
+  </div>
+  <div class="project-block col-md-3">
+    <%= render template:'projects/item' %>
+  </div>
+  <div class="project-block col-md-3">
+    <%= render template:'projects/item' %>
+  </div>
+  <div class="project-block col-md-3">
+    <%= render template:'/projects/item' %>
+  </div>
+  <div class="project-block col-md-3">
+    <%= render template:'/projects/item' %>
+  </div>  
+
+  <!--  2 Lines -->
+  <div class="project-block col-md-3">
+    <%= render template:'projects/item' %>
+  </div>
+  <div class="project-block col-md-3">
+    <%= render template:'projects/item' %>
+  </div>
+  <div class="project-block col-md-3">
+    <%= render template:'/projects/item' %>
+  </div>
+  <div class="project-block col-md-3">
+    <%= render template:'/projects/item' %>
+  </div>  
+</div>
+<div class="col-md-12">
+  <div class="project-category col-md-12">     
+    <div class="row project-block col-md-6">
+      <button class="btn btn-default btn-prev pull-right"> Prev </button>
+    </div>
+    <div class="project-block col-md-6">
+      <div class="project-block col-md-6">
+        <button class="btn btn-default btn-next"> Prev </button>
+      </div>
+    </div>
+  </div>
+</div>
+  

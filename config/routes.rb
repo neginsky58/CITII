@@ -8,6 +8,7 @@ Citii::Application.routes.draw do
 
     collection do
       get 'login'
+      get 'verify'
     end
 
   end

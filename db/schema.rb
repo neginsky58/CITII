@@ -23,6 +23,10 @@ ActiveRecord::Schema.define(version: 20140324160750) do
     t.boolean  "is_anonymous"
     t.string   "category_ids"
     t.boolean  "is_trial"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

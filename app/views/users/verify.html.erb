@@ -1,0 +1,49 @@
+
+<div id="verify-modal" class="col-md-12 login-modal modal">
+  
+    <div class="row header">
+      <center><%= image_tag "logo_white.png" %></center>
+    </div>
+    <div class="row welcome">
+      <center><h3>Welcome Back</h3></center>
+    </div>
+    <div class="login-modal-content">
+      <form class="form-horizontal" role="form">
+        <div class="form-group">        
+          <input type="text" class="form-control user-name" placeholder="username">
+        </div>
+        <div class="form-group">        
+          <input type="text" class="form-control user-password" placeholder="password">
+        </div>
+        <div class="form-group">
+          <center><buttn class="btn btn-lg btn-login btn-success">Log in</button></center>
+          
+        </div>
+        <div class="form-group">
+          <center><a href="#">Forgot password</a></center>
+          <hr />
+          <center><h4 class="signup-title">Almost done!</h4></center>
+        </div>
+       
+        <div class="form-group">
+          
+            <center><%= image_tag 'verify_captcha.png' %></center>
+          
+        </div>
+
+        <div class="form-actions">          
+          <center><button type="submit" class="btn btn-lg btn-success btn-signup">Finish</button></center>
+        </div>
+        <a class="pull-right btn-cancel" href="#" data-dismiss="modal" aria-hidden="true">cancel</a>
+      </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

@@ -3,8 +3,8 @@
 
 <div class="col-md-12">
   <div class="col-md-4 col-md-offset-4">  
-      <button class="btn btn-success col-md-5">Post a Project</button>
-      <button class="btn btn-success col-md-5 pull-right">Sign Up</button>  
+    <%=link_to 'Post a Project', new_project_url, class: 'btn btn-success col-md-5' %>    
+    <button class="btn btn-success col-md-5 pull-right" data-toggle="modal" href="#login-modal">Sign Up</button>  
   </div>
 </div>
 
