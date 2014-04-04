@@ -47,7 +47,11 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: citii
-  pool: 5
-  username: postgres
-  password: 
+  database: d4q6162tseb9qt 
+  host: ec2-54-204-40-140.compute-1.amazonaws.com
+  username: xnyqfloegtzxci
+  password: hoCfNTsRJtMtWzl_pNxMxgdQ59
+
+
+
+  
