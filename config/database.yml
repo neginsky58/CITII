@@ -50,4 +50,4 @@ production:
   database: citii
   pool: 5
   username: postgres
-  password: password
+  password: 
