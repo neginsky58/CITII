@@ -53,6 +53,7 @@ gem 'paperclip'
 gem 'aws-sdk'
 gem 'foreman'
 
+gem 'rails_12factor', group: :production
 
 
 
