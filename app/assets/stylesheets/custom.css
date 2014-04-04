@@ -273,9 +273,13 @@ form h4 {
   height: 201px;
   width: 100%;
   margin-bottom: 5px;
+  float: left;
 }
 .project-block-content .community-bar {
   padding: 10px 20px;
+}
+.project-block-content .project-image img {
+  width: 100%;
 }
 
 

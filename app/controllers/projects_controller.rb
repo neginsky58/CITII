@@ -99,9 +99,8 @@ class ProjectsController < ApplicationController
 
   # DELETE /projects/1
   # DELETE /projects/1.json
-  def destroy
-    @project = Project.find(params[:id])
-    projectuser = Project.find(params[:id]).user
+  def destroy    
+    @projec = Project.find(params[:id])
     @project.destroy
   end
 
