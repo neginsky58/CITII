@@ -49,5 +49,5 @@ production:
   encoding: unicode
   database: citii
   pool: 5
-  username: 
-  password:
+  username: postgres
+  password: password
