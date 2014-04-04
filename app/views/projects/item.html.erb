@@ -1,6 +1,7 @@
 <div class="col-md-12 project-block-content ">
   <div class="project-block-inner-content">
-    <div class="col-md-2"> 
+    
+    <div class="col-md-2 score-bar"> 
       <div class="row text-center polygon-control">   
         <%= image_tag 'polygon.png' %>
       </div>
@@ -8,7 +9,8 @@
         <label class="project-like-number">13,123</label>
       </div>
     </div>
-    <div class="col-md-10">        
+
+    <div class="col-md-10 score-bar">        
       <div class="row">
         <div class="text-right">
           <label class="project-raised-label">$1,349.00 Raised</label>
@@ -18,23 +20,19 @@
         </div>
       </div>
     </div>
-    <div class="col-md-12">
+
+    <div class="col-md-12 desc-bar">
       <div class="row">
-        <p><%= @project.inspect %><a href="col-md">cheer1990</a></p>
+        <p><%= project.description %><a href="col-md">cheer1990</a></p>
       </div>
     </div>
+
     <div class="col-md-12 project-image">
-      <div class="row">
-        <a href="#">
-          <% if @project.picture.nil? %>
-            <%= image_tag 'no_project_picture.jpg', width: 300, height: 203 %>
-          <% else %>
-            <%= image_tag @project.picture.url, width: 300, height: 203 %>
-          <% end %>
-        </a>
-      </div>
+      
+      <center><a href="<%= project_url(project.id) %>"><%= image_tag project.picture.url, height: 201 %></a></center>
+      
     </div>
-    <div class="col-md-12">
+    <div class="col-md-12 community-bar">
       <div class="row text-right">
         <a href="#">Community</a>
         <a href="">/</a>
