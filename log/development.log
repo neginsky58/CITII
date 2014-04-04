@@ -68936,3 +68936,1015 @@ Started GET "/assets/projects/photo1.jpg" for 127.0.0.1 at 2014-04-04 03:56:46 +
 
 
 Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-04 03:56:46 +0300
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-04 03:59:25 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  Rendered projects/item.html.erb (7.9ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/index.html.erb within layouts/home (20.1ms)
+  Rendered shared/_header.html.erb (2.1ms)
+  Rendered shared/_sub_menu.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.7ms)
+  Rendered users/login.html.erb (1.9ms)
+  Rendered users/verify.html.erb (1.8ms)
+Completed 200 OK in 286ms (Views: 246.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-04 03:59:25 +0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-04-04 03:59:26 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-04 03:59:27 +0300
+
+
+Started GET "/assets/projects/photo1.jpg" for 127.0.0.1 at 2014-04-04 03:59:27 +0300
+
+
+Started GET "/assets/logo_white.png" for 127.0.0.1 at 2014-04-04 03:59:27 +0300
+
+
+Started GET "/assets/verify_captcha.png" for 127.0.0.1 at 2014-04-04 03:59:27 +0300
+
+
+Started GET "/assets/footer_logo.png" for 127.0.0.1 at 2014-04-04 03:59:27 +0300
+
+
+Started GET "/assets/polygon.png" for 127.0.0.1 at 2014-04-04 03:59:27 +0300
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2014-04-04 04:01:51 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/project (20.4ms)
+  Rendered shared/_header.html.erb (1.9ms)
+  Rendered shared/_sub_menu.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.6ms)
+  Rendered users/login.html.erb (1.9ms)
+  Rendered users/verify.html.erb (1.7ms)
+Completed 200 OK in 292ms (Views: 244.7ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:52 +0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/footer_logo.png" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/logo_white.png" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started GET "/assets/verify_captcha.png" for 127.0.0.1 at 2014-04-04 04:01:53 +0300
+
+
+Started POST "/projects" for 127.0.0.1 at 2014-04-04 04:02:18 +0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OJmZHMgijAl0+oLkY8Jf46NUrqZKchsqW+ALQS3jKiA=", "project"=>{"title"=>"Music project", "picture"=>#<ActionDispatch::Http::UploadedFile:0xb55404c4 @tempfile=#<Tempfile:/tmp/RackMultipart20140404-22339-qioy97>, @original_filename="avatar2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[picture]\"; filename=\"avatar2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "summary"=>"Testttt", "description"=>"his is your full pitch for your project. What is the probem? How can you solve it? And why should thepublic care? Hyperlinks can be added, so consider linking to a short video which describes your proje"}}
+Command :: file -b --mime-type '/tmp/acf5d3b6c2d78f894650016e5085483820140404-22339-16ucwmf'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/c1db5ac7890a96739b34716055f414a320140404-22339-17w67tl[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/c1db5ac7890a96739b34716055f414a320140404-22339-17w67tl[0]'
+Command :: convert '/tmp/c1db5ac7890a96739b34716055f414a320140404-22339-17w67tl[0]' -auto-orient -resize "1024x768>" '/tmp/c1db5ac7890a96739b34716055f414a320140404-22339-17w67tl20140404-22339-1mgso6l'
+Command :: file -b --mime '/tmp/c1db5ac7890a96739b34716055f414a320140404-22339-17w67tl20140404-22339-1mgso6l'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/c1db5ac7890a96739b34716055f414a320140404-22339-17w67tl[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/c1db5ac7890a96739b34716055f414a320140404-22339-17w67tl[0]'
+Command :: convert '/tmp/c1db5ac7890a96739b34716055f414a320140404-22339-17w67tl[0]' -auto-orient -resize "100x100>" '/tmp/c1db5ac7890a96739b34716055f414a320140404-22339-17w67tl20140404-22339-142nmai'
+Command :: file -b --mime '/tmp/c1db5ac7890a96739b34716055f414a320140404-22339-17w67tl20140404-22339-142nmai'
+  [1m[35m (0.5ms)[0m  BEGIN
+Command :: file -b --mime-type '/tmp/82f475b314161450f824d71598301ad320140404-22339-1ix1i6t'
+  [1m[36mSQL (14.0ms)[0m  [1mINSERT INTO "projects" ("created_at", "description", "picture_file_name", "summary", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 04 Apr 2014 01:02:19 UTC +00:00], ["description", "his is your full pitch for your project. What is the probem? How can you solve it? And why should thepublic care? Hyperlinks can be added, so consider linking to a short video which describes your proje"], ["picture_file_name", "avatar2.jpg"], ["summary", "Testttt"], ["title", "Music project"], ["updated_at", Fri, 04 Apr 2014 01:02:19 UTC +00:00]]
+[paperclip] saving /projects/pictures/000/000/002/original/avatar2.jpg
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 2086ms
+
+AWS::Errors::MissingCredentialsError (
+Missing Credentials.
+
+Unable to find AWS credentials.  You can configure your AWS credentials
+a few different ways:
+
+* Call AWS.config with :access_key_id and :secret_access_key
+
+* Export AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY to ENV
+
+* On EC2 you can run instances with an IAM instance profile and credentials
+  will be auto loaded from the instance metadata service on those
+  instances.
+
+* Call AWS.config with :credential_provider.  A credential provider should
+  either include AWS::Core::CredentialProviders::Provider or respond to
+  the same public methods.
+
+= Ruby on Rails
+
+In a Ruby on Rails application you may also specify your credentials in
+the following ways:
+
+* Via a config initializer script using any of the methods mentioned above
+  (e.g. RAILS_ROOT/config/initializers/aws-sdk.rb).
+
+* Via a yaml configuration file located at RAILS_ROOT/config/aws.yml.
+  This file should be formated like the default RAILS_ROOT/config/database.yml
+  file.
+
+):
+  app/controllers/projects_controller.rb:52:in `block in create'
+  app/controllers/projects_controller.rb:51:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (48.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (73.2ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2014-04-04 04:06:35 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/project (46.5ms)
+  Rendered shared/_header.html.erb (1.9ms)
+  Rendered shared/_sub_menu.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.7ms)
+  Rendered users/login.html.erb (2.0ms)
+  Rendered users/verify.html.erb (1.7ms)
+Completed 200 OK in 370ms (Views: 279.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-04-04 04:06:36 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-04 04:06:38 +0300
+
+
+Started GET "/assets/footer_logo.png" for 127.0.0.1 at 2014-04-04 04:06:38 +0300
+
+
+Started GET "/assets/verify_captcha.png" for 127.0.0.1 at 2014-04-04 04:06:38 +0300
+
+
+Started GET "/assets/logo_white.png" for 127.0.0.1 at 2014-04-04 04:06:38 +0300
+
+
+Started POST "/projects" for 127.0.0.1 at 2014-04-04 04:07:07 +0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OJmZHMgijAl0+oLkY8Jf46NUrqZKchsqW+ALQS3jKiA=", "project"=>{"title"=>"Music", "picture"=>#<ActionDispatch::Http::UploadedFile:0xb54855c @tempfile=#<Tempfile:/tmp/RackMultipart20140404-22487-kumg8z>, @original_filename="avatar2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[picture]\"; filename=\"avatar2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "summary"=>"TEacher", "description"=>"People"}}
+Command :: file -b --mime-type '/tmp/44232651ccb9fbf2bb6b52291086a67020140404-22487-13rjr04'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/74f3aba432ded3b48691c4decc9c931220140404-22487-10i3abs[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/74f3aba432ded3b48691c4decc9c931220140404-22487-10i3abs[0]'
+Command :: convert '/tmp/74f3aba432ded3b48691c4decc9c931220140404-22487-10i3abs[0]' -auto-orient -resize "1024x768>" '/tmp/74f3aba432ded3b48691c4decc9c931220140404-22487-10i3abs20140404-22487-6exmqb'
+Command :: file -b --mime '/tmp/74f3aba432ded3b48691c4decc9c931220140404-22487-10i3abs20140404-22487-6exmqb'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/74f3aba432ded3b48691c4decc9c931220140404-22487-10i3abs[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/74f3aba432ded3b48691c4decc9c931220140404-22487-10i3abs[0]'
+Command :: convert '/tmp/74f3aba432ded3b48691c4decc9c931220140404-22487-10i3abs[0]' -auto-orient -resize "100x100>" '/tmp/74f3aba432ded3b48691c4decc9c931220140404-22487-10i3abs20140404-22487-13bv3vb'
+Command :: file -b --mime '/tmp/74f3aba432ded3b48691c4decc9c931220140404-22487-10i3abs20140404-22487-13bv3vb'
+  [1m[35m (0.6ms)[0m  BEGIN
+Command :: file -b --mime-type '/tmp/ec05fb248190b76e6c7011cea842677e20140404-22487-j8401'
+  [1m[36mSQL (15.9ms)[0m  [1mINSERT INTO "projects" ("created_at", "description", "picture_file_name", "summary", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Fri, 04 Apr 2014 01:07:08 UTC +00:00], ["description", "People"], ["picture_file_name", "avatar2.jpg"], ["summary", "TEacher"], ["title", "Music"], ["updated_at", Fri, 04 Apr 2014 01:07:08 UTC +00:00]]
+[paperclip] saving /projects/pictures/000/000/003/original/avatar2.jpg
+  [1m[35m (0.7ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 1664ms
+
+AWS::Errors::MissingCredentialsError (
+Missing Credentials.
+
+Unable to find AWS credentials.  You can configure your AWS credentials
+a few different ways:
+
+* Call AWS.config with :access_key_id and :secret_access_key
+
+* Export AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY to ENV
+
+* On EC2 you can run instances with an IAM instance profile and credentials
+  will be auto loaded from the instance metadata service on those
+  instances.
+
+* Call AWS.config with :credential_provider.  A credential provider should
+  either include AWS::Core::CredentialProviders::Provider or respond to
+  the same public methods.
+
+= Ruby on Rails
+
+In a Ruby on Rails application you may also specify your credentials in
+the following ways:
+
+* Via a config initializer script using any of the methods mentioned above
+  (e.g. RAILS_ROOT/config/initializers/aws-sdk.rb).
+
+* Via a yaml configuration file located at RAILS_ROOT/config/aws.yml.
+  This file should be formated like the default RAILS_ROOT/config/database.yml
+  file.
+
+):
+  app/controllers/projects_controller.rb:52:in `block in create'
+  app/controllers/projects_controller.rb:51:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.1ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2014-04-04 04:08:17 +0300
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OJmZHMgijAl0+oLkY8Jf46NUrqZKchsqW+ALQS3jKiA=", "project"=>{"title"=>"Music", "picture"=>#<ActionDispatch::Http::UploadedFile:0xb7aa598 @tempfile=#<Tempfile:/tmp/RackMultipart20140404-22487-4gxmax>, @original_filename="avatar2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[picture]\"; filename=\"avatar2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "summary"=>"TEacher", "description"=>"People"}}
+Command :: file -b --mime-type '/tmp/cccf654054145c1677cfffa856a06a2d20140404-22487-1ofzv2'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/fe3368c6d156148ed42d33dfcca9ed4f20140404-22487-fkzjih[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/fe3368c6d156148ed42d33dfcca9ed4f20140404-22487-fkzjih[0]'
+Command :: convert '/tmp/fe3368c6d156148ed42d33dfcca9ed4f20140404-22487-fkzjih[0]' -auto-orient -resize "1024x768>" '/tmp/fe3368c6d156148ed42d33dfcca9ed4f20140404-22487-fkzjih20140404-22487-1v4ok6x'
+Command :: file -b --mime '/tmp/fe3368c6d156148ed42d33dfcca9ed4f20140404-22487-fkzjih20140404-22487-1v4ok6x'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/fe3368c6d156148ed42d33dfcca9ed4f20140404-22487-fkzjih[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/fe3368c6d156148ed42d33dfcca9ed4f20140404-22487-fkzjih[0]'
+Command :: convert '/tmp/fe3368c6d156148ed42d33dfcca9ed4f20140404-22487-fkzjih[0]' -auto-orient -resize "100x100>" '/tmp/fe3368c6d156148ed42d33dfcca9ed4f20140404-22487-fkzjih20140404-22487-pxerf2'
+Command :: file -b --mime '/tmp/fe3368c6d156148ed42d33dfcca9ed4f20140404-22487-fkzjih20140404-22487-pxerf2'
+  [1m[36m (1.4ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime-type '/tmp/c39fd6df36ed1056addc460cfd5cc39520140404-22487-mvfwu4'
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "projects" ("created_at", "description", "picture_file_name", "summary", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Fri, 04 Apr 2014 01:08:18 UTC +00:00], ["description", "People"], ["picture_file_name", "avatar2.jpg"], ["summary", "TEacher"], ["title", "Music"], ["updated_at", Fri, 04 Apr 2014 01:08:18 UTC +00:00]]
+[paperclip] saving /projects/pictures/000/000/004/original/avatar2.jpg
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 1276ms
+
+AWS::Errors::MissingCredentialsError (
+Missing Credentials.
+
+Unable to find AWS credentials.  You can configure your AWS credentials
+a few different ways:
+
+* Call AWS.config with :access_key_id and :secret_access_key
+
+* Export AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY to ENV
+
+* On EC2 you can run instances with an IAM instance profile and credentials
+  will be auto loaded from the instance metadata service on those
+  instances.
+
+* Call AWS.config with :credential_provider.  A credential provider should
+  either include AWS::Core::CredentialProviders::Provider or respond to
+  the same public methods.
+
+= Ruby on Rails
+
+In a Ruby on Rails application you may also specify your credentials in
+the following ways:
+
+* Via a config initializer script using any of the methods mentioned above
+  (e.g. RAILS_ROOT/config/initializers/aws-sdk.rb).
+
+* Via a yaml configuration file located at RAILS_ROOT/config/aws.yml.
+  This file should be formated like the default RAILS_ROOT/config/database.yml
+  file.
+
+):
+  app/controllers/projects_controller.rb:52:in `block in create'
+  app/controllers/projects_controller.rb:51:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.7ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+Processing by ProjectsController#index as HTML
+  Rendered projects/item.html.erb (3.9ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.3ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/index.html.erb within layouts/home (12.5ms)
+  Rendered shared/_header.html.erb (0.2ms)
+  Rendered shared/_sub_menu.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+  Rendered users/login.html.erb (0.5ms)
+  Rendered users/verify.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:19 +0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/projects/photo1.jpg" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/logo_white.png" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/verify_captcha.png" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/footer_logo.png" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/assets/polygon.png" for 127.0.0.1 at 2014-04-04 04:08:20 +0300
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+Processing by ProjectsController#new as HTML
+  Rendered projects/new.html.erb within layouts/project (8.9ms)
+  Rendered shared/_header.html.erb (0.3ms)
+  Rendered shared/_sub_menu.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+  Rendered users/login.html.erb (0.4ms)
+  Rendered users/verify.html.erb (0.3ms)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-04-04 04:09:18 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-04 04:09:19 +0300
+
+
+Started GET "/assets/logo_white.png" for 127.0.0.1 at 2014-04-04 04:09:19 +0300
+
+
+Started GET "/assets/footer_logo.png" for 127.0.0.1 at 2014-04-04 04:09:19 +0300
+
+
+Started GET "/assets/verify_captcha.png" for 127.0.0.1 at 2014-04-04 04:09:19 +0300
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-04 04:09:21 +0300
+Processing by ProjectsController#index as HTML
+  Rendered projects/item.html.erb (0.3ms)
+  Rendered projects/item.html.erb (0.3ms)
+  Rendered projects/item.html.erb (0.3ms)
+  Rendered projects/item.html.erb (0.3ms)
+  Rendered projects/item.html.erb (0.3ms)
+  Rendered projects/item.html.erb (0.3ms)
+  Rendered projects/item.html.erb (0.3ms)
+  Rendered projects/item.html.erb (0.3ms)
+  Rendered projects/index.html.erb within layouts/home (22.3ms)
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered shared/_sub_menu.html.erb (0.0ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+  Rendered users/login.html.erb (0.3ms)
+  Rendered users/verify.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:21 +0300
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:21 +0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:21 +0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:21 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:21 +0300
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:21 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:21 +0300
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-04 04:09:21 +0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:21 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:21 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/polygon.png" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/projects/photo1.jpg" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/footer_logo.png" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/verify_captcha.png" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+
+
+Started GET "/assets/logo_white.png" for 127.0.0.1 at 2014-04-04 04:09:22 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-04-04 04:11:52 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  Rendered projects/item.html.erb (4.5ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.3ms)
+  Rendered projects/item.html.erb (0.3ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/item.html.erb (0.2ms)
+  Rendered projects/index.html.erb within layouts/home (14.1ms)
+  Rendered shared/_header.html.erb (1.9ms)
+  Rendered shared/_sub_menu.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.6ms)
+  Rendered users/login.html.erb (1.9ms)
+  Rendered users/verify.html.erb (2.0ms)
+Completed 200 OK in 302ms (Views: 258.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-04 04:11:52 +0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-04-04 04:11:52 +0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-04-04 04:11:52 +0300
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-04-04 04:11:52 +0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-04-04 04:11:52 +0300
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2014-04-04 04:11:52 +0300
+
+
+Started GET "/assets/search.css?body=1" for 127.0.0.1 at 2014-04-04 04:11:52 +0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-04-04 04:11:52 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:52 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/polygon.png" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/projects/photo1.jpg" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/footer_logo.png" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/logo_white.png" for 127.0.0.1 at 2014-04-04 04:11:53 +0300
+
+
+Started GET "/assets/verify_captcha.png" for 127.0.0.1 at 2014-04-04 04:11:53 +0300

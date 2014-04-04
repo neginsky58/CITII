@@ -5,7 +5,7 @@ class Project < ActiveRecord::Base
     :s3_credentials => { :access_key_id => ENV['S3_KEY'], :secret_access_key => ENV['S3_SECRET'] },
     :styles => { :medium => "1024x768>", :thumb => "100x100>" }, 
     :default_url => "no_image.jpg",
-    :bucket => 'BidBuds'
+    :bucket => 'bountier.upload'
 
 
    validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\Z/
