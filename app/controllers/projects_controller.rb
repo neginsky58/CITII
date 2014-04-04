@@ -4,8 +4,7 @@ class ProjectsController < ApplicationController
   def index
     #@projects = Project.order("created_at desc").page(params[:page]).per_page(5)
 
-    @projects = Project.all
-    @env = ENV['S3_KEY']
+    @projects = Project.find(:all)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @projects }
@@ -15,7 +14,7 @@ class ProjectsController < ApplicationController
   # GET /projects/1
   # GET /projects/1.json
   def show
-    @project = Project.new
+    @project = Project.find(params[:id])
   end
 
   # GET /projects/new

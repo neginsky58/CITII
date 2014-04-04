@@ -20,17 +20,13 @@
     </div>
     <div class="col-md-12">
       <div class="row">
-        <p><%= @project.inspect %><a href="col-md">cheer1990</a></p>
+        <p>Create a daycare teleconferencing network which allows kids from across the world to play game.<a href="col-md">cheer1990</a></p>
       </div>
     </div>
     <div class="col-md-12 project-image">
       <div class="row">
         <a href="#">
-          <% if @project.picture.nil? %>
-            <%= image_tag 'no_project_picture.jpg', width: 300, height: 203 %>
-          <% else %>
-            <%= image_tag @project.picture.url, width: 300, height: 203 %>
-          <% end %>
+          <%= image_tag 'projects/photo1.jpg', class: 'img-responsive' %>
         </a>
       </div>
     </div>
