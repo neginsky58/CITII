@@ -1,98 +1,106 @@
-<div class="row">
-  <div class="col-md-12">
-    <div class="row new-project-container">
-      <h3 class="project-title">Create a New Project</h3>
-    </div>  
-  </div>
-  <div class="col-md-12 project-expired-section">
-    <div class="row new-project-container">
-      <h3>All projects expire after 30 days and can be renewed twice</h3>
-    </div>
-  </div>
-
-  <div class="col-md-12">
-    <div class="new-project-container">
-
-      <form class="form-horizontal col-md-12" role="form">
-        <div class="form-group">
-          <label class="control-label"><h4>Project Title</h4></label>
-          <p class="description">Write something straight and to the point to help it stand out. Consdier: How will this project help others? What is the most interesting or unique thing about it?</p>
-          <div class="col-md-10">            
-            <p class="row validate-notification">100 Characters Remaining</p>
-            <input type="text" name="title" class="row form-control" />
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label"><h4>Project Picture</h4></label>
-          <p class="description">Get your project noticed by adding a picture which represents your idea.</p>
-          <div class="col-md-10">
-            <p class="row validate-notification">Please select a jpg, png, or gif. Max file size of 2MB</p>            
-            <p class="row"><a href="#">Upload a Picture</a></p>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label"><h4>Project Summary</h4></label>
-          <p class="description">This is your first chance to make a good impression. What is the specific benefit of your project?</p>
-          <div class="col-md-10">  
-            <p class="row validate-notification">100 Characters Remaining</p>
-            <input type="text" name="title" class="row form-control" />
-          </div>
-        </div>
-
-
-        <div class="form-group">
-          <label class="control-label"><h4>Project Description</h4></label>
-          <h5 class="description">This is your full pitch for your project. What is the probem? How can you solve it? And why should thepublic care? Hyperlinks can be added, so consider linking to a short video which describes your project.</h5>
-          <div class="col-md-10">  
-            <p class="row validate-notification">100 Characters Remaining</p>          
-            <textarea type="text" name="title" class="row form-control" rows="7"></textarea>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label"><h4>Post Project as Anonymous?</h4></label>
-          <div class="col-md-10">            
-            <input type="checkbox"> Yes, Post as Anonymous (Cannot be Undone)
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label"><h4>Please select your project category.</h4></label>
-          <div class="col-md-10">            
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox1" value="option1"> Lorem Ipsum
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox1" value="option1"> Lorem Ipsum
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox1" value="option1"> Lorem Ipsum
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox1" value="option1"> Lorem Ipsum
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox1" value="option1"> Lorem Ipsum
-            </label>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label"><h4>Do you Agree to Our Terms and Conditions?</h4></label>
-          <div class="col-md-10">            
-            <input type="checkbox"> Yes, I have read and agree to Citii.org’s terms and conditions.
-          </div>
-        </div>
-
-        <div class="form-group">
-          
-          <button type="submit" class="btn btn-success">Submit</button>
-          
-        </div>
-
-
-      </form>
+<div class="">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row new-project-container">
+        <h3 class="project-title">Create a New Project</h3>
+      </div>  
     </div>
   </div>
 </div>
+<div class="col-md-12 project-expired-section">
+  <div class="row new-project-container">
+    <h3>All projects expire after 30 days and can be renewed twice</h3>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="new-project-container">
+
+        <%= form_for(@project, html: {class: 'form-horizontal',  enctype: 'multipart/form-data'}) do |f| %>
+          <div class="form-group">
+            <label class="control-label"><h4>Project Title</h4></label>
+            <p class="description">Write something straight and to the point to help it stand out. Consdier: How will this project help others? What is the most interesting or unique thing about it?</p>
+            <div class="col-md-10">            
+              <p class="row validate-notification">100 Characters Remaining</p>
+              <%= f.text_field :title, class: 'row form-control', required: true %>
+              
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label"><h4>Project Picture</h4></label>
+            <p class="description">Get your project noticed by adding a picture which represents your idea.</p>
+            <div class="col-md-10">
+              <p class="row validate-notification">Please select a jpg, png, or gif. Max file size of 2MB</p>            
+              
+              <div class="row">
+                <div class="fileUpload btn btn-default col-md-2">
+                  <a>Upload a Picture</a>
+                  <%= f.file_field :picture, class: 'upload upload-photo-input' %>                      
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label"><h4>Project Summary</h4></label>
+            <p class="description">This is your first chance to make a good impression. What is the specific benefit of your project?</p>
+            <div class="col-md-10">  
+              <p class="row validate-notification">100 Characters Remaining</p>
+              <%= f.text_field :summary, class: 'row form-control', required: true %>            
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label"><h4>Project Description</h4></label>
+            <h5 class="description">This is your full pitch for your project. What is the probem? How can you solve it? And why should thepublic care? Hyperlinks can be added, so consider linking to a short video which describes your project.</h5>
+            <div class="col-md-10">  
+              <p class="row validate-notification">100 Characters Remaining</p>          
+              <%= f.text_area :description, class: 'row form-control', rows: '7' %>            
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label"><h4>Post Project as Anonymous?</h4></label>
+            <div class="col-md-10">            
+              <input type="checkbox"> Yes, Post as Anonymous (Cannot be Undone)
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label"><h4>Please select your project category.</h4></label>
+            <div class="col-md-10">            
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1"> Lorem Ipsum
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1"> Lorem Ipsum
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1"> Lorem Ipsum
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1"> Lorem Ipsum
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1"> Lorem Ipsum
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label"><h4>Do you Agree to Our Terms and Conditions?</h4></label>
+            <div class="col-md-10">            
+              <input type="checkbox"> Yes, I have read and agree to Citii.org’s terms and conditions.
+            </div>
+          </div>
+
+          <div class="form-group">          
+            <button type="submit" class="btn btn-success">Submit</button>          
+          </div>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div> <!-- Container End -->

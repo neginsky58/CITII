@@ -9,17 +9,13 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require bootstrap 
+ *= require bootstrap  
  *= require font-awesome 
  *= require_tree .
  */
 
 
-
-
-
-
-
+@import "bootstrap";
 
 
 

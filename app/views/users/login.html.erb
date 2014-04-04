@@ -1,5 +1,5 @@
 
-<div class="col-md-12 login-modal">
+<div id="login-modal" class="col-md-12 login-modal modal">
   
     <div class="row header">
       <center><%= image_tag "logo_white.png" %></center>
@@ -10,16 +10,63 @@
     <div class="login-modal-content">
       <form class="form-horizontal" role="form">
         <div class="form-group">        
-          <input type="text" class="form-control" placeholder="username">
+          <input type="text" class="form-control user-name" placeholder="username">
         </div>
         <div class="form-group">        
-          <input type="text" class="form-control" placeholder="password">
+          <input type="text" class="form-control user-password" placeholder="password">
         </div>
         <div class="form-group">
-          <center><buttn class="btn btn-success">Log in</button></center>
+          <center><a class="btn btn-lg btn-login btn-success" href="<%= new_project_url %>">Log in</a></center>
+          
+        </div>
+        <div class="form-group">
           <center><a href="#">Forgot password</a></center>
+          <hr />
+          <center><h4 class="signup-title">Not a member yet? Sign up in 10 seconds.</h4></center>
+        </div>
+       
+        <div class="form-group">
+          <div class="col-md-6">
+            <div class="col-md-12">
+              <div class="form-group form-group-city">
+                <input type="text" class="form-control" placeholder="username" />
+              </div>
+              <div class="form-group form-group-city">
+                <input type="text" class="form-control" placeholder="password" />
+              </div>
+              <div class="form-group form-group-city">
+                <input type="text" class="form-control" placeholder="confirm password" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="col-md-12">
+              <div class="form-group form-group-city">
+                <input type="text" class="form-control" placeholder="email" />
+              </div>
+              <div class="form-group form-group-city">
+                <input type="text" class="form-control" placeholder="city" />
+              </div>
+              <div class="form-group form-group-city">
+                <input type="text" class="form-control" placeholder="country" />
+              </div>
+            </div>
+          </div>
         </div>
 
+        <div class="form-actions">          
+          <center><button type="submit" class="btn btn-lg btn-success btn-signup" data-toggle="modal" href="#verify-modal" data-dismiss="modal" aria-hidden="true">Sign up</button></center>
+        </div>
+        <a class="pull-right btn-cancel modal-close" href="#" data-dismiss="modal" aria-hidden="true">cancel</a>
       </form>
     </div>
 </div>
+
+
+
+
+
+
+
+
+

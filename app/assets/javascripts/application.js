@@ -12,6 +12,22 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap
+//= require bootstrap/modal
 //= require_tree .
+
+
+$(document).ready(function() {
+  
+  // $('.signup-link').on('click', function(){
+  //   var dialogInstance = BootstrapDialog.show({
+  //           message: 'Hello Banana!'
+  //       });
+  //   //$('#login-modal').modal();    
+  // });
+  // $('.login-link').on('click', function(){
+  //   $('#login-modal').modal('hide');
+    
+  //   console.log('signup link');
+  // }); 
+})

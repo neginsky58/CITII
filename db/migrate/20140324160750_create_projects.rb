@@ -9,6 +9,8 @@ class CreateProjects < ActiveRecord::Migration
       t.string    :category_ids
       t.boolean   :is_trial
 
+      t.attachment :picture
+      
       t.timestamps
     end
   end

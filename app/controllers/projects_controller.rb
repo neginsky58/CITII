@@ -1,11 +1,11 @@
 class ProjectsController < ApplicationController
-  
+  layout 'home'
 
   def index
     #@projects = Project.order("created_at desc").page(params[:page]).per_page(5)
 
-    @projects = Project.approved.newest.page(params[:page]).per_page(5)
-
+    @projects = Project.all
+    @env = ENV['S3_KEY']
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @projects }
@@ -24,7 +24,7 @@ class ProjectsController < ApplicationController
     @project = Project.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render layout: 'project'}
       format.json { render json: @project }
     end
   end
@@ -45,12 +45,12 @@ class ProjectsController < ApplicationController
   # POST /projects
   # POST /projects.json
   def create
-    @project = current_user.projects.new(params[:project])
+    @project = Project.new(project_params)
     # @project.category = params[:category][:id]
 
     respond_to do |format|
       if @project.save
-        format.html { redirect_to edit_project_path(@project), notice: 'Project was successfully started.' }
+        format.html { redirect_to action: 'index' }
 
         # if params[:project][:image].blank?
         #   redirect_to @project
@@ -69,11 +69,11 @@ class ProjectsController < ApplicationController
   # PUT /projects/1
   # PUT /projects/1.json
   def update
-    @project = Project.find(params[:id])
+    @project = Project.find(project_params)
     # @project.category = params[:category][:id]
 
     respond_to do |format|
-      if @project.update_attributes(params[:project])
+      if @project.update_attributes(project_params)
         format.html { redirect_to edit_project_path(@project) }
 
         # if params[:project][:image].blank?
@@ -96,20 +96,12 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
     projectuser = Project.find(params[:id]).user
     @project.destroy
-
-    if current_user == projectuser
-      respond_to do |format|
-        format.html { redirect_to pendingprojects_user_path(current_user) }
-        format.json { head :no_content }
-      end
-    else
-      respond_to do |format|
-        format.html { redirect_to admin_url }
-        format.json { head :no_content }
-      end
-    end
+    
   end
 
-  
+  private
+  def project_params
+    params.require(:project).permit(:title, :description, :summary, :picture )
+  end 
 
 end
