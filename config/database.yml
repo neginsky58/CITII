@@ -46,10 +46,9 @@ test:
 # Heroku disregards this file anyways...
 production:
   adapter: postgresql  
-  database: d59c5ac1pgi93c 
-  host: ec2-54-204-42-178.compute-1.amazonaws.com
-  username: dybdoeoqmzvpxb
-  password: f2kb5pJPKIi-bTGkhEQtckk_wF
+  database: citii   
+  username: postgres
+  password: password
 
 
 
