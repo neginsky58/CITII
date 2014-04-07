@@ -21,33 +21,11 @@
     </ul>
   
   </div>
-  <div class="project-block col-md-3">
-    <%= render template:'projects/item' %>
-  </div>
-  <div class="project-block col-md-3">
-    <%= render template:'projects/item' %>
-  </div>
-  <div class="project-block col-md-3">
-    <%= render template:'/projects/item' %>
-  </div>
-  <div class="project-block col-md-3">
-    <%= render template:'/projects/item' %>
-  </div>  
-
-  <!--  2 Lines -->
-  <div class="project-block col-md-3">
-    <%= render template:'projects/item' %>
-  </div>
-  <div class="project-block col-md-3">
-    <%= render template:'projects/item' %>
-  </div>
-  <div class="project-block col-md-3">
-    <%= render template:'/projects/item' %>
-  </div>
-  <div class="project-block col-md-3">
-    <%= render template:'/projects/item' %>
-  </div>  
-
+  <% @projects.each do |project| %>
+    <div class="project-block col-md-3">
+      <%= render template:'projects/item', :locals=>{:project=>project} %>
+    </div>
+  <% end %>
 
 </div>
   

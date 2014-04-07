@@ -2,16 +2,16 @@
 
   <div class="col-md-5">    
     <nav class="nav nav-pills nav-justified" role="navigation">
-      <li class="citii-active"><a href="#"><%= image_tag 'logo.png' %></a></li>
+      <li class="citii-active"><a href="/"><%= image_tag 'logo.png' %></a></li>
       <li><a href="#">BROWSE PROJECTS</a></li>
       <li><a href="#">HOW IT WORKS</a></li>      
     </nav>
   </div>
   <div class="col-md-2 navbar-form">
-    <form class=" navbar-left" role="search">
+    <form class="navbar-left" role="search" action="<%=search_projects_url%>" method="post">
       <div class="form-group">
         <button type="submit" class="btn btn-do-search"><i class="fa fa-search"></i></button>
-        <input type="text" class="form-control search-word-input" placeholder="Search" >
+        <input type="text" class="form-control search-word-input" name="keyword" placeholder="Search" >
       </div>      
     </form>
   </div>

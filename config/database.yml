@@ -45,9 +45,10 @@ test:
 
 # Heroku disregards this file anyways...
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: citii
-  pool: 5
-  username: 
-  password:
+  adapter: postgresql  
+  database: citii   
+  username: postgres
+  password: password
+
+
+

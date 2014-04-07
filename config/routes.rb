@@ -2,7 +2,11 @@ Citii::Application.routes.draw do
 
   # Home page
   resources :home
-  resources :projects
+  resources :projects do
+    collection do 
+      post 'search'
+    end
+  end
   
   resources :users do
 

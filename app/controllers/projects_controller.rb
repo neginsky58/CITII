@@ -1,6 +1,8 @@
 class ProjectsController < ApplicationController
   layout 'home'
 
+  skip_before_filter :verify_authenticity_token  
+
   def index
     #@projects = Project.order("created_at desc").page(params[:page]).per_page(5)
 
@@ -15,6 +17,13 @@ class ProjectsController < ApplicationController
   # GET /projects/1.json
   def show
     @project = Project.find(params[:id])
+  end
+
+
+  def search
+    @keyword = params[:keyword]
+    q = "%#{@keyword}%"
+    @projects = Project.where("title like ? or description like ?", q, q)
   end
 
   # GET /projects/1/edit
@@ -91,11 +100,10 @@ class ProjectsController < ApplicationController
 
   # DELETE /projects/1
   # DELETE /projects/1.json
-  def destroy
+  def destroy    
     @project = Project.find(params[:id])
-    projectuser = Project.find(params[:id]).user
     @project.destroy
-    
+    redirect_to root_url
   end
 
   private

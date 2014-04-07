@@ -10,7 +10,9 @@
     </ul>
   
   </div>
-  
+  <h3 class="page-header">
+    Search results for "<%= @keyword %>"...
+  </h3>
   <% @projects.each do |project| %>
     <div class="project-block col-md-3">
       <%= render template:'projects/item', :locals=>{ project: project} %>
