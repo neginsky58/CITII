@@ -17,17 +17,6 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
   end
 
-  # GET /projects/new
-  # GET /projects/new.json
-  def new
-    @project = Project.new
-
-    respond_to do |format|
-      format.html { render layout: 'project'}
-      format.json { render json: @project }
-    end
-  end
-
   # GET /projects/1/edit
   def edit
     if current_user == Project.find(params[:id]).user || current_user.try(:admin?)
@@ -37,6 +26,17 @@ class ProjectsController < ApplicationController
         @projectcosts = @project.projectcosts.page(params[:page]).per_page(20)
     else
       redirect_to root_url
+    end
+  end
+
+  # GET /projects/new
+  # GET /projects/new.json
+  def new
+    @project = Project.new
+
+    respond_to do |format|
+      format.html { render layout: 'project'}
+      format.json { render json: @project }
     end
   end
 
