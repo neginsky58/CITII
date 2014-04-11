@@ -3,15 +3,7 @@ class ProjectsController < ApplicationController
 
   skip_before_filter :verify_authenticity_token  
 
-  def index
-    #@projects = Project.order("created_at desc").page(params[:page]).per_page(5)
 
-    @projects = Project.find(:all)
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @projects }
-    end
-  end
 
   # GET /projects/1
   # GET /projects/1.json
@@ -48,7 +40,15 @@ class ProjectsController < ApplicationController
       format.json { render json: @project }
     end
   end
+  def index
+    #@projects = Project.order("created_at desc").page(params[:page]).per_page(5)
 
+    @projects = Project.find(:all)
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @projects }
+    end
+  end
   
   # POST /projects
   # POST /projects.json
