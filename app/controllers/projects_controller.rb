@@ -3,17 +3,6 @@ class ProjectsController < ApplicationController
 
   skip_before_filter :verify_authenticity_token  
 
-  def index
-    #@projects = Project.order("created_at desc").page(params[:page]).per_page(5)
-
-    @projects = Project.find(:all)
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @projects }
-    end
-  end
-
-
 
   # GET /projects/new
   # GET /projects/new.json
@@ -30,6 +19,7 @@ class ProjectsController < ApplicationController
   def show
     @project = Project.find(params[:id])
   end
+
   def search
     @keyword = params[:keyword]
     q = "%#{@keyword}%"
@@ -48,6 +38,25 @@ class ProjectsController < ApplicationController
     end
   end
 
+  # GET /projects/new
+  # GET /projects/new.json
+  def new
+    @project = Project.new
+
+    respond_to do |format|
+      format.html { render layout: 'project'}
+      format.json { render json: @project }
+    end
+  end
+  def index
+    #@projects = Project.order("created_at desc").page(params[:page]).per_page(5)
+
+    @projects = Project.find(:all)
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @projects }
+    end
+  end
   
   # POST /projects
   # POST /projects.json
