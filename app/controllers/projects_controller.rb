@@ -13,11 +13,7 @@ class ProjectsController < ApplicationController
     end
   end
 
-  # GET /projects/1
-  # GET /projects/1.json
-  def show
-    @project = Project.find(params[:id])
-  end
+
 
   # GET /projects/new
   # GET /projects/new.json
@@ -29,7 +25,11 @@ class ProjectsController < ApplicationController
       format.json { render json: @project }
     end
   end
-
+  # GET /projects/1
+  # GET /projects/1.json
+  def show
+    @project = Project.find(params[:id])
+  end
   def search
     @keyword = params[:keyword]
     q = "%#{@keyword}%"
