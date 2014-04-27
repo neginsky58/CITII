@@ -6,19 +6,6 @@ class ProjectsController < ApplicationController
 
   # GET /projects/new
   # GET /projects/new.json
-  def new
-    @project = Project.new
-
-    respond_to do |format|
-      format.html { render layout: 'project'}
-      format.json { render json: @project }
-    end
-  end
-  # GET /projects/1
-  # GET /projects/1.json
-  def show
-    @project = Project.find(params[:id])
-  end
 
   def search
     @keyword = params[:keyword]
@@ -36,6 +23,19 @@ class ProjectsController < ApplicationController
     else
       redirect_to root_url
     end
+  end
+  def new
+    @project = Project.new
+
+    respond_to do |format|
+      format.html { render layout: 'project'}
+      format.json { render json: @project }
+    end
+  end
+  # GET /projects/1
+  # GET /projects/1.json
+  def show
+    @project = Project.find(params[:id])
   end
 
   # GET /projects/new
