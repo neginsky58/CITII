@@ -7,11 +7,6 @@ class ProjectsController < ApplicationController
   # GET /projects/new
   # GET /projects/new.json
 
-  def search
-    @keyword = params[:keyword]
-    q = "%#{@keyword}%"
-    @projects = Project.where("title like ? or description like ?", q, q)
-  end
 
   # GET /projects/1/edit
   def edit
@@ -23,6 +18,13 @@ class ProjectsController < ApplicationController
     else
       redirect_to root_url
     end
+  end
+
+  
+  def search
+    @keyword = params[:keyword]
+    q = "%#{@keyword}%"
+    @projects = Project.where("title like ? or description like ?", q, q)
   end
   def new
     @project = Project.new
